@@ -376,7 +376,7 @@ span{
     width: 60%;
 }
 .skills-column:nth-child(2) .skill-content .progress:nth-child(3) .bar span{
-    width: 90%;
+    width: 80%;
 }
 .skills-column:nth-child(2) .skill-content .progress:nth-child(4) .bar span{
     width: 80%;
@@ -417,6 +417,7 @@ span{
 .portfolio-box img {
     width: 100%;
     height: 20vw;
+    min-height: 30rem;
     transition: .5s ease;
     object-fit: cover;
 }
@@ -437,30 +438,31 @@ span{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 1.5rem 2rem;
+    overflow: hidden;
+    opacity: 0;
     transform: translateY(100%);
     transition: .5s ease;
 }
 
 .portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .portfolio-layer h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: red;
 }
 
 .portfolio-layer h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: whitesmoke;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .portfolio-layer p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
     margin: .3rem 0 1rem;
     color: black;
 }
